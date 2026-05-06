@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Impressum — MPCL IT &amp; Web Solutions</title>
-  <meta name="description" content="Impressum von MPCL IT & Web Solutions, Hamburg.">
+  <title>Kontakt — MPCL IT &amp; Web Solutions</title>
+  <meta name="description" content="Kontakt aufnehmen mit MPCL IT & Web Solutions in Hamburg. Telefon, E-Mail oder Kontaktformular.">
   <meta name="theme-color" content="#FAFAF7">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 12'><rect width='4' height='12' rx='1' fill='%23B8763A'/></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -47,11 +47,56 @@
     </div>
   </header>
 
-  <!-- ========== CONTENT ========== -->
-  <section class="hb-section" style="padding-top: 140px; max-width: 740px;">
-    <h1 style="font-size: 36px; font-weight: 500; letter-spacing: -0.02em; margin: 0 0 40px;">Impressum</h1>
-    <div style="font-size: 15px; line-height: 1.7; color: var(--hb-text-2);">
-      <p>Inhalt folgt — Marlon liefert den rechtsverbindlichen Impressum-Text.</p>
+  <!-- ========== CONTACT ========== -->
+  <section class="hb-section" id="hb-contact" style="padding-top: 140px;">
+    <div class="hb-contact">
+      <div>
+        <h2 data-i18n="contact.cn.title">Schreiben Sie mir.</h2>
+        <p data-i18n="contact.cn.intro">
+          Telefon ist am schnellsten, E-Mail am gründlichsten. Werktags
+          rufe ich innerhalb von 4 Stunden zurück.
+        </p>
+        <div class="hb-contact__details">
+<span class="label">name:</span>    Marlon Pascal Colin Lutterloh
+<span class="label">firma:</span>   MPCL IT &amp; Web Solutions
+<span class="label">ort:</span>     Hamburg
+<span class="label">tel:</span>     <a href="tel:+4917663693760">0176 63 69 37 60</a>
+<span class="label">mail:</span>    <a href="mailto:mail@mpcl.agency">mail@mpcl.agency</a>
+<span class="label">stnr:</span>    134/246/70760</div>
+      </div>
+      <form class="hb-form" id="contactForm">
+        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+        <input type="hidden" name="_subject" value="Neue Anfrage über mpcl.agency">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <div class="hb-field">
+          <label for="name" data-i18n="form.name">Ihr Name</label>
+          <input type="text" id="name" name="name" required autocomplete="name">
+        </div>
+        <div class="hb-field">
+          <label for="contact" data-i18n="form.contact">Telefon oder E-Mail</label>
+          <input type="text" id="contact" name="contact" required autocomplete="email">
+        </div>
+        <div class="hb-field">
+          <label for="subject" data-i18n="form.subject">Worum geht's?</label>
+          <select id="subject" name="subject">
+            <option data-i18n="form.subj.1">Internet / WLAN</option>
+            <option data-i18n="form.subj.2">PC / Mac / Drucker</option>
+            <option data-i18n="form.subj.3">Lexware / Backup</option>
+            <option data-i18n="form.subj.4">Webseite</option>
+            <option data-i18n="form.subj.5">Etwas anderes</option>
+          </select>
+        </div>
+        <div class="hb-field">
+          <label for="message" data-i18n="form.problem">Kurze Beschreibung</label>
+          <textarea id="message" name="message" data-i18n-placeholder="form.problemPh" placeholder="Z. B. „WLAN funktioniert nur in einem Zimmer"."></textarea>
+        </div>
+        <button type="submit" class="hb-btn hb-btn--primary">
+          <span data-i18n="form.send">Nachricht senden</span>
+          <span class="key">↵</span>
+        </button>
+        <p class="hb-form__status" id="formStatus" hidden></p>
+      </form>
     </div>
   </section>
 
