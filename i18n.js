@@ -33,7 +33,7 @@ window.MPCL_I18N = {
     // Concierge hero
     "hero.cn.eyebrow": "IT-Concierge · Hamburg",
     "hero.cn.title": "IT, die wieder einfach ist.",
-    "hero.cn.lede": "MPCL kommt zu Ihnen nach Hause oder ins Büro. Ich richte Router ein, repariere Drucker, sichere Lexware, baue ruhige Webseiten. Keine Wartemusik, keine Buzzwords.",
+    "hero.cn.lede": "Persönlicher IT-Service vor Ort.<br>Router, WLAN, Drucker, PCs und Technikprobleme — direkt bei Ihnen gelöst.<br><br>Zusätzlich entwickle ich moderne Webseiten für Selbstständige und kleine Unternehmen.",
     "hero.cn.cta1": "Termin anfragen",
     "hero.cn.cta2": "Leistungen ansehen",
     "hero.cn.card.h": "Heute verfügbar",
@@ -198,7 +198,7 @@ window.MPCL_I18N = {
 
     "hero.cn.eyebrow": "IT Concierge · Hamburg",
     "hero.cn.title": "IT that's simple again.",
-    "hero.cn.lede": "MPCL comes to your home or office. I set up routers, fix printers, back up Lexware, build calm websites. No hold music, no buzzwords.",
+    "hero.cn.lede": "Personal IT service on-site.<br>Routers, Wi-Fi, printers, PCs and tech problems — solved directly at your location.<br><br>I also build professional websites for freelancers and small businesses.",
     "hero.cn.cta1": "Book a visit",
     "hero.cn.cta2": "See services",
     "hero.cn.card.h": "Available today",
