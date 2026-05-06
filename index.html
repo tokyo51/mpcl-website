@@ -282,10 +282,14 @@
 <span class="label">firma:</span>   MPCL IT &amp; Web Solutions
 <span class="label">ort:</span>     Hamburg
 <span class="label">tel:</span>     <a href="tel:+4917663693760">0176 63 69 37 60</a>
-<span class="label">mail:</span>    <a href="mailto:marlonlutt@icloud.com">marlonlutt@icloud.com</a>
+<span class="label">mail:</span>    <a href="mailto:mail@mpcl.agency">mail@mpcl.agency</a>
 <span class="label">stnr:</span>    134/246/70760</div>
       </div>
-      <form class="hb-form" onsubmit="event.preventDefault();">
+      <form class="hb-form" id="contactForm">
+        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+        <input type="hidden" name="_subject" value="Neue Anfrage über mpcl.agency">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
         <div class="hb-field">
           <label for="name" data-i18n="form.name">Ihr Name</label>
           <input type="text" id="name" name="name" required autocomplete="name">
@@ -312,6 +316,7 @@
           <span data-i18n="form.send">Nachricht senden</span>
           <span class="key">↵</span>
         </button>
+        <p class="hb-form__status" id="formStatus" hidden></p>
       </form>
     </div>
   </section>

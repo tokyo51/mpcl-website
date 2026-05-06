@@ -152,6 +152,9 @@ window.MPCL_I18N = {
     "form.problem": "Was ist los?",
     "form.problemPh": "Z. B. \u201EWLAN funktioniert nur in einem Zimmer\u201C oder \u201EDrucker druckt nicht mehr\u201C.",
     "form.send": "Nachricht senden",
+    "form.sending": "Wird gesendet…",
+    "form.success": "✓ Nachricht gesendet! Ich melde mich in Kürze.",
+    "form.error": "Etwas hat nicht geklappt — bitte nochmal versuchen oder direkt anrufen.",
 
     // Footer
     "footer.tagline": "Ruhige IT-Hilfe für Hamburg. Router, Software, Webseiten — ohne Drama.",
@@ -311,6 +314,9 @@ window.MPCL_I18N = {
     "form.problem": "What's going on?",
     "form.problemPh": "E.g. \"Wi-Fi only works in one room\" or \"Printer won't print anymore\".",
     "form.send": "Send message",
+    "form.sending": "Sending…",
+    "form.success": "✓ Message sent! I'll get back to you shortly.",
+    "form.error": "Something went wrong — please try again or call directly.",
 
     "footer.tagline": "Calm IT help for Hamburg. Routers, software, websites — no drama.",
     "footer.h.work": "Services",

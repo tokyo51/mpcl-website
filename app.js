@@ -36,6 +36,61 @@
   try { savedLang = localStorage.getItem(STORAGE_LANG) || "de"; } catch (e) {}
   applyLang(savedLang);
 
+  // ---------- Contact form ----------
+  const form = document.getElementById("contactForm");
+  if (form) {
+    form.addEventListener("submit", async function (e) {
+      e.preventDefault();
+      const btn = form.querySelector('button[type="submit"]');
+      const label = btn.querySelector("[data-i18n]");
+      const status = document.getElementById("formStatus");
+      const saved = label.textContent;
+      const lang = document.documentElement.lang || "de";
+
+      label.textContent = lang === "en" ? "Sending…" : "Wird gesendet…";
+      btn.disabled = true;
+      status.hidden = true;
+
+      try {
+        const res = await fetch("https://formsubmit.co/ajax/mail@mpcl.agency", {
+          method: "POST",
+          headers: { "Content-Type": "application/json", Accept: "application/json" },
+          body: JSON.stringify({
+            name: form.name.value,
+            contact: form.contact.value,
+            subject: form.subject.value,
+            message: form.message.value,
+            _subject: form.querySelector('[name="_subject"]').value,
+            _honey: form.querySelector('[name="_honey"]').value,
+            _captcha: "false",
+            _template: "table"
+          })
+        });
+        const json = await res.json();
+        if (json.success) {
+          form.reset();
+          status.textContent = lang === "en"
+            ? "✓ Message sent! I’ll get back to you shortly."
+            : "✓ Nachricht gesendet! Ich melde mich in Kürze.";
+          status.className = "hb-form__status hb-form__status--ok";
+          status.hidden = false;
+          label.textContent = saved;
+          btn.disabled = false;
+        } else {
+          throw new Error("fail");
+        }
+      } catch (_) {
+        status.textContent = lang === "en"
+          ? "Something went wrong — please try again or call directly."
+          : "Etwas hat nicht geklappt — bitte nochmal versuchen oder direkt anrufen.";
+        status.className = "hb-form__status hb-form__status--err";
+        status.hidden = false;
+        label.textContent = saved;
+        btn.disabled = false;
+      }
+    });
+  }
+
   // ---------- Scroll reveal ----------
   if ("IntersectionObserver" in window) {
     const io = new IntersectionObserver(entries => {
