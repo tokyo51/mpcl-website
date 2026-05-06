@@ -1,0 +1,146 @@
+/* ============================================================
+   MPCL Design System — Tokens
+   MPCL IT & Web Solutions · Marlon Pascal Colin Lutterloh
+   ============================================================ */
+
+/* ---------- Fonts ---------- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&display=swap');
+
+:root {
+  /* ---------- Color · Ink (text & strokes) ---------- */
+  --mpcl-ink-900: #0E0F11;   /* primary text, logo */
+  --mpcl-ink-700: #2A2D33;   /* body */
+  --mpcl-ink-500: #5A6068;   /* secondary text */
+  --mpcl-ink-300: #9CA3AC;   /* tertiary, captions */
+  --mpcl-ink-200: #C9CDD3;   /* disabled text */
+
+  /* ---------- Color · Paper (surfaces) ---------- */
+  --mpcl-paper-50:  #FAFAF7; /* page background — warm off-white, like good invoice paper */
+  --mpcl-paper-100: #F4F3EE; /* card / panel */
+  --mpcl-paper-200: #ECEAE2; /* sunken / hover */
+  --mpcl-paper-300: #DCD9CE; /* dividers, table strokes */
+  --mpcl-paper-white: #FFFFFF;
+
+  /* ---------- Color · Accent ---------- */
+  /* MPCL signature: a single warm ochre — pulled from the warmth in the
+     paper tones. Used sparingly for total amounts, key actions, the
+     accent rule on documents, and the small ▮ mark beside the wordmark. */
+  --mpcl-accent: #B8763A;
+  --mpcl-accent-hover: #A1652E;
+  --mpcl-accent-soft: #F1E5D2;
+  --mpcl-accent-ink: #5C3A1C;
+
+  /* ---------- Color · Status ---------- */
+  --mpcl-success: #2F6F4F;
+  --mpcl-success-soft: #E3EFE7;
+  --mpcl-warning: #B8763A;       /* same as accent — invoices use ochre for "due" */
+  --mpcl-warning-soft: #F5E9D5;
+  --mpcl-danger:  #A03A2E;
+  --mpcl-danger-soft: #F1DDD9;
+  --mpcl-info:    #2F5A7A;
+  --mpcl-info-soft: #DDE7EF;
+
+  /* ---------- Type · Families ---------- */
+  --mpcl-font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  --mpcl-font-serif: "Fraunces", "Times New Roman", Georgia, serif;
+  --mpcl-font-mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
+
+  /* ---------- Type · Scale ---------- */
+  /* Document-first scale — sized for invoices and screens both render well. */
+  --mpcl-text-xs:   11px;    /* fine print, footer */
+  --mpcl-text-sm:   12.5px;  /* table cells, labels */
+  --mpcl-text-base: 14px;    /* body */
+  --mpcl-text-md:   16px;    /* emphasized body */
+  --mpcl-text-lg:   20px;    /* small section heads */
+  --mpcl-text-xl:   26px;    /* page heads */
+  --mpcl-text-2xl:  34px;    /* document title (RECHNUNG) */
+  --mpcl-text-3xl:  48px;    /* hero */
+
+  /* ---------- Type · Tracking ---------- */
+  --mpcl-track-tight: -0.01em;
+  --mpcl-track-normal: 0;
+  --mpcl-track-wide: 0.04em;
+  --mpcl-track-caps: 0.14em;     /* for SECTION HEADS like "RECHNUNG", "LEISTUNGSNACHWEIS" */
+
+  /* ---------- Type · Leading ---------- */
+  --mpcl-lead-tight: 1.2;
+  --mpcl-lead-snug: 1.35;
+  --mpcl-lead-normal: 1.5;
+  --mpcl-lead-relaxed: 1.65;
+
+  /* ---------- Spacing (4px base) ---------- */
+  --mpcl-space-1:  4px;
+  --mpcl-space-2:  8px;
+  --mpcl-space-3:  12px;
+  --mpcl-space-4:  16px;
+  --mpcl-space-5:  20px;
+  --mpcl-space-6:  24px;
+  --mpcl-space-8:  32px;
+  --mpcl-space-10: 40px;
+  --mpcl-space-12: 48px;
+  --mpcl-space-16: 64px;
+  --mpcl-space-20: 80px;
+
+  /* ---------- Radii ---------- */
+  /* MPCL is document-rooted; corners stay sharp or near-sharp.
+     No pill buttons, no rounded cards. Max radius = 6px. */
+  --mpcl-radius-none: 0;
+  --mpcl-radius-sm:   2px;
+  --mpcl-radius-md:   4px;
+  --mpcl-radius-lg:   6px;
+
+  /* ---------- Borders ---------- */
+  --mpcl-border-hair: 0.5px solid var(--mpcl-paper-300);
+  --mpcl-border-thin: 1px solid var(--mpcl-paper-300);
+  --mpcl-border-rule: 1px solid var(--mpcl-ink-900);  /* document rules — top/bottom of tables */
+  --mpcl-border-accent: 2px solid var(--mpcl-accent);
+
+  /* ---------- Shadows ---------- */
+  /* Restrained — this is paper, not glass. */
+  --mpcl-shadow-sm: 0 1px 2px rgba(14, 15, 17, 0.04);
+  --mpcl-shadow-md: 0 4px 12px rgba(14, 15, 17, 0.06), 0 1px 2px rgba(14, 15, 17, 0.04);
+  --mpcl-shadow-lg: 0 12px 32px rgba(14, 15, 17, 0.08), 0 2px 6px rgba(14, 15, 17, 0.04);
+  --mpcl-shadow-paper: 0 1px 0 rgba(14, 15, 17, 0.04), 0 12px 28px rgba(14, 15, 17, 0.08);
+
+  /* ---------- Motion ---------- */
+  --mpcl-ease: cubic-bezier(0.2, 0.6, 0.2, 1);
+  --mpcl-dur-fast: 120ms;
+  --mpcl-dur-base: 200ms;
+  --mpcl-dur-slow: 320ms;
+
+  /* ---------- Document grid ---------- */
+  --mpcl-doc-width: 794px;     /* A4 @ 96dpi */
+  --mpcl-doc-margin: 56px;     /* generous, like the real invoice */
+}
+
+/* ---------- Base reset for design-system previews ---------- */
+.mpcl,
+.mpcl * {
+  box-sizing: border-box;
+}
+
+.mpcl {
+  font-family: var(--mpcl-font-sans);
+  color: var(--mpcl-ink-900);
+  background: var(--mpcl-paper-50);
+  font-feature-settings: "ss01", "cv11", "tnum" 0;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Tabular numbers — use on anything monetary or columnar */
+.mpcl-tabular {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum" 1, "lnum" 1;
+}
+
+/* Section eyebrow — RECHNUNG, LEISTUNGSNACHWEIS, etc. */
+.mpcl-eyebrow {
+  font-family: var(--mpcl-font-sans);
+  font-weight: 600;
+  font-size: var(--mpcl-text-2xl);
+  letter-spacing: var(--mpcl-track-caps);
+  text-transform: uppercase;
+  color: var(--mpcl-ink-900);
+  line-height: 1;
+}

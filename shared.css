@@ -1,0 +1,78 @@
+/* ============================================================
+   MPCL Website — Shared base
+   Imports tokens, sets up world switcher + lang toggle styles
+   ============================================================ */
+
+@import url('colors_and_type.css');
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: var(--mpcl-font-sans);
+  color: var(--mpcl-ink-900);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* ---------- World switcher (top of page) ---------- */
+.mpcl-world-switch {
+  position: fixed;
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  display: flex;
+  gap: 4px;
+  padding: 4px;
+  background: rgba(255,255,255,0.92);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(14,15,17,0.08);
+  border-radius: 999px;
+  box-shadow: 0 4px 20px rgba(14,15,17,0.08);
+  font-family: var(--mpcl-font-mono);
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.mpcl-world-switch button {
+  background: transparent;
+  border: 0;
+  padding: 8px 14px;
+  border-radius: 999px;
+  cursor: pointer;
+  color: var(--mpcl-ink-500);
+  font: inherit;
+  text-transform: inherit;
+  letter-spacing: inherit;
+  transition: all 0.18s ease;
+}
+.mpcl-world-switch button:hover { color: var(--mpcl-ink-900); }
+.mpcl-world-switch button[aria-current="true"] {
+  background: var(--mpcl-ink-900);
+  color: var(--mpcl-paper-50);
+}
+
+/* ---------- Lang toggle (per world) ---------- */
+.lang-toggle {
+  display: inline-flex;
+  gap: 0;
+  font-family: var(--mpcl-font-mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+}
+.lang-toggle button {
+  background: transparent;
+  border: 0;
+  padding: 4px 8px;
+  cursor: pointer;
+  color: inherit;
+  opacity: 0.4;
+  font: inherit;
+  letter-spacing: inherit;
+}
+.lang-toggle button[aria-current="true"] { opacity: 1; }
+.lang-toggle .sep { opacity: 0.3; padding: 4px 0; }
+
+/* ---------- World containers ---------- */
+.world { display: none; }
+.world.active { display: block; }
