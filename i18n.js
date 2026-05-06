@@ -167,8 +167,7 @@ window.MPCL_I18N = {
     "footer.about.3": "Preise",
     "footer.about.4": "Kontakt",
     "footer.legal.1": "Impressum",
-    "footer.legal.2": "Datenschutz",
-    "footer.legal.3": "AGB"
+    "footer.legal.2": "Datenschutz"
   },
 
   en: {
@@ -327,7 +326,6 @@ window.MPCL_I18N = {
     "footer.about.3": "Pricing",
     "footer.about.4": "Contact",
     "footer.legal.1": "Imprint",
-    "footer.legal.2": "Privacy",
-    "footer.legal.3": "Terms"
+    "footer.legal.2": "Privacy"
   }
 };
