@@ -5,6 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>MPCL — IT &amp; Web Solutions · Hamburg</title>
   <meta name="description" content="Ruhige IT-Hilfe für Hamburg. Router, Drucker, Lexware, Webseiten — ohne Buzzwords, ohne Wartemusik.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="MPCL — IT &amp; Web Solutions, Hamburg">
+  <meta property="og:description" content="Ruhige IT-Hilfe für Hamburg. Router, Drucker, Lexware, Webseiten.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mpcl.de">
+  <meta property="og:locale" content="de_DE">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="MPCL — IT &amp; Web Solutions, Hamburg">
+  <meta name="twitter:description" content="Ruhige IT-Hilfe für Hamburg. Router, Drucker, Lexware, Webseiten.">
+
+  <meta name="theme-color" content="#FAFAF7">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 12'><rect width='4' height='12' rx='1' fill='%23B8763A'/></svg>">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&amp;display=swap">
+
   <link rel="stylesheet" href="shared.css">
   <link rel="stylesheet" href="world-hybrid.css">
 </head>
@@ -17,7 +36,7 @@
     <div class="hb-header__inner">
       <a class="hb-brand" href="#">
         <div class="hb-brand__mark"></div>
-        <img class="hb-brand__logo" src="assets/mpcl-logo.svg" alt="MPCL">
+        <img class="hb-brand__logo" src="assets/mpcl-logo.svg" alt="MPCL" width="32" height="18">
       </a>
       <nav class="hb-nav">
         <a href="#hb-services" data-i18n="nav.services">Leistungen</a>
@@ -267,16 +286,16 @@
       </div>
       <form class="hb-form" onsubmit="event.preventDefault();">
         <div class="hb-field">
-          <label data-i18n="form.name">Ihr Name</label>
-          <input type="text" required>
+          <label for="name" data-i18n="form.name">Ihr Name</label>
+          <input type="text" id="name" name="name" required autocomplete="name">
         </div>
         <div class="hb-field">
-          <label data-i18n="form.contact">Telefon oder E-Mail</label>
-          <input type="text" required>
+          <label for="contact" data-i18n="form.contact">Telefon oder E-Mail</label>
+          <input type="text" id="contact" name="contact" required autocomplete="email">
         </div>
         <div class="hb-field">
-          <label data-i18n="form.subject">Worum geht's?</label>
-          <select>
+          <label for="subject" data-i18n="form.subject">Worum geht's?</label>
+          <select id="subject" name="subject">
             <option data-i18n="form.subj.1">Internet / WLAN</option>
             <option data-i18n="form.subj.2">PC / Mac / Drucker</option>
             <option data-i18n="form.subj.3">Lexware / Backup</option>
@@ -285,8 +304,8 @@
           </select>
         </div>
         <div class="hb-field">
-          <label data-i18n="form.problem">Kurze Beschreibung</label>
-          <textarea data-i18n-placeholder="form.problemPh" placeholder="Z. B. „WLAN funktioniert nur in einem Zimmer"."></textarea>
+          <label for="message" data-i18n="form.problem">Kurze Beschreibung</label>
+          <textarea id="message" name="message" data-i18n-placeholder="form.problemPh" placeholder="Z. B. „WLAN funktioniert nur in einem Zimmer"."></textarea>
         </div>
         <button type="submit" class="hb-btn hb-btn--primary">
           <span data-i18n="form.send">Nachricht senden</span>
