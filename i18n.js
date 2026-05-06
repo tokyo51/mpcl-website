@@ -27,10 +27,13 @@ window.MPCL_I18N = {
     "hero.tm.cta1": "termin anfragen",
     "hero.tm.cta2": "services lesen",
 
+    // Hybrid hero
+    "hero.hb.title": "IT-Hilfe für Menschen,<br>die <span class=\"accent\">keine Lust</span><br>auf IT haben<span class=\"cursor\"></span>",
+
     // Concierge hero
     "hero.cn.eyebrow": "IT-Concierge · Hamburg",
     "hero.cn.title": "IT, die wieder einfach ist.",
-    "hero.cn.lede": "MPCL kommt zu Ihnen nach Hause oder ins Büro. Ich richte Router ein, repariere Drucker, sichere Lexware, baue ruhige Webseiten. Kein Wartemusik, keine Buzzwords.",
+    "hero.cn.lede": "MPCL kommt zu Ihnen nach Hause oder ins Büro. Ich richte Router ein, repariere Drucker, sichere Lexware, baue ruhige Webseiten. Keine Wartemusik, keine Buzzwords.",
     "hero.cn.cta1": "Termin anfragen",
     "hero.cn.cta2": "Leistungen ansehen",
     "hero.cn.card.h": "Heute verfügbar",
@@ -192,6 +195,8 @@ window.MPCL_I18N = {
     "hero.tm.lede": "MPCL is a one-person service in Hamburg. Routers, printers, Lexware, websites. No buzzwords. I fix it, document it, you get back to work.",
     "hero.tm.cta1": "request a visit",
     "hero.tm.cta2": "read services",
+
+    "hero.hb.title": "IT help for people<br>who <span class=\"accent\">don't want</span><br>to deal with IT<span class=\"cursor\"></span>",
 
     "hero.cn.eyebrow": "IT Concierge · Hamburg",
     "hero.cn.title": "IT that's simple again.",
